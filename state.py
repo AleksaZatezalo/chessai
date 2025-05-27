@@ -4,6 +4,8 @@ Date: May 2025
 Description: Represents a chess board.
 """
 
+import chess
+
 class Board():
     def __init__(self):
-        pass
+        self.board = chess.Board()
