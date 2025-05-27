@@ -11,6 +11,8 @@ V = -1 black wins board state
 V = 0 draw state
 V = 1 white wins board state
 
+Should we fix the value of the inital board state?
+
 State(Board):
 
 Extra State:
