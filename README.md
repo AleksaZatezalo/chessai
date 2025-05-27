@@ -6,6 +6,11 @@
 Definition: Value network
 V - f(board)
 
+What is V?
+V = -1 black wins board state
+V = 0 draw state
+V = 1 white wins board state
+
 State(Board):
 
 Extra State:
