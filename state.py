@@ -16,7 +16,8 @@ class State():
 
     def serialize(self):
         #257 bits according to readme
-        pass
+        pp = self.board.shredder_fen()
+        return pp
 
     def edges(self):
         return list(self.board.legal_moves)

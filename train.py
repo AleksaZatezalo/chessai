@@ -2,6 +2,7 @@
 
 import os 
 import chess.pgn
+from state import State
 
 for fn in os.listdir("data"):
         pgn = open(os.path.join("data", fn))
@@ -16,6 +17,6 @@ for fn in os.listdir("data"):
                 for i, move in enumerate(game.mainline_moves()):
                         board.push(move)
                         #TODO: extract the boards
-                        print(value, board.shredder_fen())
+                        print(value, State(board).serialize())
                 exit(0)
         break
