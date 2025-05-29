@@ -10,4 +10,8 @@ for fn in os.listdir("data"):
                         game = chess.pgn.read_game(pgn)
                 except Exception:
                         break
-                
+                board = game.board()
+                for move in game.mainline_moves():
+                        board.push(move)
+                        print(board)
+                exit(0)
