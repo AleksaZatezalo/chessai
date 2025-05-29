@@ -32,4 +32,4 @@ Pieces(1+6*2-13):
 * Queen
 * Rook
 
-8x8x4 + 4 = 260 bits
+8x8x5 + 4 = 260 bits

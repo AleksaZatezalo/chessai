@@ -3,6 +3,7 @@
 import os 
 import chess.pgn
 from state import State
+import numpy as np
 
 for fn in os.listdir("data"):
         pgn = open(os.path.join("data", fn))

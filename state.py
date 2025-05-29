@@ -6,6 +6,7 @@ Description: Represents a chess board's state.
 """
 
 import chess
+import numpy as np
 
 class State():
     def __init__(self, board=None):
@@ -15,6 +16,9 @@ class State():
             self.board = board
 
     def serialize(self):
+        state = np.zeros((8, 8, 5))
+        state[:, :, 4] = (self.board.turn*1.0)
+        print(state)
         #257 bits according to readme
         pp = self.board.shredder_fen()
         return pp
