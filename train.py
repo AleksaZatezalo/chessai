@@ -12,8 +12,10 @@ for fn in os.listdir("data"):
                         break
                 result = game.headers['Result']
                 board = game.board()
-                for move in game.mainline_moves():
+                for i, move in enumerate(game.mainline_moves()):
                         board.push(move)
+                        print(i)
                         print(board)
-                print(result)
-        exit(0)
+                        print(result)
+                exit(0)
+        break
