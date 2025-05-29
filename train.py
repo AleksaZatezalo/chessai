@@ -12,10 +12,11 @@ for fn in os.listdir("data"):
                         break
                 result = game.headers['Result']
                 board = game.board()
-                for i, move in enumerate(game.mainline_moves()):
-                        board.push(move)
-                        print(i)
-                        print(board)
-                        print(result)
-                exit(0)
+                value = {'1/2-1/2':0, '0-1':-1, '1-0':1}[game.headers['Result']]
+                # for i, move in enumerate(game.mainline_moves()):
+                #         board.push(move)
+                #         print(i)
+                #         print(board)
+                #         print(result)
+                # exit(0)
         break
