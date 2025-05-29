@@ -25,7 +25,7 @@ def get_dataset():
                                 ser =  State(board).serialize()[:, :, 0]
                                 X.append(ser)
                                 Y.append(value)
-                        if len(X) > 25000:
+                        if len(X) > 280000:
                                 return X, Y
 if __name__ =="__main__":
         get_dataset()
