@@ -8,8 +8,11 @@ Description: Represents a chess board's state.
 import chess
 
 class State():
-    def __init__(self):
-        self.board = chess.Board()
+    def __init__(self, board=None):
+        if board is None:
+            self.board = chess.Board()
+        else:
+            self.board = board
 
     def serialize(self):
         #257 bits according to readme
