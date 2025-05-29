@@ -15,8 +15,7 @@ for fn in os.listdir("data"):
                 value = {'1/2-1/2':0, '0-1':-1, '1-0':1}[game.headers['Result']]
                 for i, move in enumerate(game.mainline_moves()):
                         board.push(move)
-                        print(i)
-                        print(board)
-                        print(result)
+                        #TODO: extract the boards
+                        print(value, board.shredder_fen())
                 exit(0)
         break
