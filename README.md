@@ -13,6 +13,11 @@ V = 1 white wins board state
 
 Should we fix the value of the inital board state?
 
+Simpler:
+All positions where white wins = 1
+All positions where draw = 0
+All positions where black wins = -1 
+
 State(Board):
 
 Extra State:
