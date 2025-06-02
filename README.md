@@ -1,5 +1,14 @@
 # Zero Knowledge Chess Engine
 
+Zero Knowledge Chess Engine trained on pgn games. Coded alongside a George Hotz Twitch Stream linked below:
+
+* (Chess Engine Part 1)[https://www.youtube.com/watch?v=RFaFmkCEGEs&t=3649s]
+* (Chess Engine Part 2)[https://www.youtube.com/watch?v=aXxoYVKXebI]
+* (Chess Engine Part 3)[https://www.youtube.com/watch?v=ZulvfKPSfKg]
+
+The neural net uses deep learning to learn to play chess.
+
+## Notes (To Be Deleted)
 * Establish the search tree
 * Use a neural net to prune the search tree
 
