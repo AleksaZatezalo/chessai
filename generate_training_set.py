@@ -6,7 +6,7 @@ from state import State
 import numpy as np
 
 # pgn files in the data folder
-def get_dataset():
+def get_dataset(num_samples=None):
         X, Y = [], []
         gn = 0
         for fn in os.listdir("data"):
@@ -25,7 +25,7 @@ def get_dataset():
                                 ser =  State(board).serialize()[:, :, 0]
                                 X.append(ser)
                                 Y.append(value)
-                        if len(X) > 280000:
+                        if num_samples is not None and len(X) > num_samples:
                                 return X, Y
 if __name__ =="__main__":
-        get_dataset()
+       X, Y = get_dataset(10000)
