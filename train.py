@@ -11,4 +11,4 @@ class ChessValueDataset(Dataset):
         return self.X.shape[0]
     
     def __getitem__(self, idx):
-        return{'X': self.X[idx], 'Ý'}
+        return{'X': self.X[idx], 'Ý':self.Y[idx]}
