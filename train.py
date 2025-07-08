@@ -13,3 +13,6 @@ class ChessValueDataset(Dataset):
     
     def __getitem__(self, idx):
         return{'X': self.X[idx], 'Y':self.Y[idx]}
+    
+
+chess_dataset = ChessValueDataset()
