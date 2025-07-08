@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from torch.utils.data import Dataset
 import numpy as np
 
@@ -11,4 +12,4 @@ class ChessValueDataset(Dataset):
         return self.X.shape[0]
     
     def __getitem__(self, idx):
-        return{'X': self.X[idx], 'Ý':self.Y[idx]}
+        return{'X': self.X[idx], 'Y':self.Y[idx]}
