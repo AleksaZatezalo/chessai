@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+"""
+Author: Aleksa Zatezalo
+Description: Uses pytorch to train nueral net on chess games.
+Date: July 2025
+"""
+
 from torch.utils.data import Dataset
 import numpy as np
 import torch
