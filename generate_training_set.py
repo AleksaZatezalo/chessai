@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+"""
+Author: Aleksa Zatezalo
+Description: Opens and extracts chess games from .npz archive
+Date: July 2025
+"""
+
 import os 
 import chess.pgn
 from state import State
