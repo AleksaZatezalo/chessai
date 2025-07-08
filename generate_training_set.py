@@ -33,7 +33,7 @@ def get_dataset(num_samples=None):
         return X, Y
 
 if __name__ =="__main__":
-       X, Y = get_dataset(1000)
+       X, Y = get_dataset()
        np.savez("processed/dataset.npz", X, Y)
 #        h5 = h5py.File('processed/traingme.h5', 'w')
 #        h5.create_dataset('X', X)
