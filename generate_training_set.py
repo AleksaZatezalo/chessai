@@ -1,12 +1,4 @@
 #!/usr/bin/env python3
-
-"""
-Author: Aleksa Zatezalo
-Description: Opens and extracts chess games from .npz archive
-Date: July 2025
-"""
-
-#!/usr/bin/env python3
 import os
 import chess.pgn
 import numpy as np
@@ -44,3 +36,4 @@ def get_dataset(num_samples=None):
 if __name__ == "__main__":
   X,Y = get_dataset(25000000)
   np.savez("processed/dataset_25M.npz", X, Y)
+
