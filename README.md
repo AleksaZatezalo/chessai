@@ -1,4 +1,4 @@
-# twitchchess
+# AI Chess
 
 A toy implementation of ~~neural network~~ normal chess written while livestreaming by George Hotz.
 
